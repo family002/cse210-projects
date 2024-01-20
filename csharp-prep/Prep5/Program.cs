@@ -17,19 +17,19 @@ class Program
     {
         Console.WriteLine("Welcome to the program!");
     }
-    static void PromptUserName()
+    static string PromptUserName()
     {
         Console.WriteLine("Please enter your name:");
-        string user = Console.ReadLine();
-        return user;
+        string name = Console.ReadLine();
+        return name;
     }
-    static void PromptUserNumber()
+    static int PromptUserNumber()
     {
         Console.WriteLine("Please enter your favorite number:");
         int num = int.Parse(Console.ReadLine());
         return num;
     }
-    static void SquareNumber(int num)
+    static int SquareNumber(int num)
     {
         int sqnum = num*num;
         return sqnum;
