@@ -1,9 +1,21 @@
-using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop04 World!");
+        Menu menu = new Menu();
+
+        while (true)
+        {
+            menu.ShowMenu();
+            Activity activity = menu.SelectActivity();
+
+            if (activity == null)
+            {
+                break;
+            }
+
+            activity.Start();
+            activity.End();
+        }
     }
 }
